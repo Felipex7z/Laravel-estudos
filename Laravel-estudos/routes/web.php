@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $arr = [1,2,3,4,5];
+    
+    return view('welcome',[
+        'arr' => $arr
+
+
+
+
+    ]);
 });
